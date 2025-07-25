@@ -176,6 +176,7 @@ body {
   text-align: center;
   padding: 2em;
   background-color: white;
+
   h2 {
     font-size: 3rem;
   }
@@ -224,7 +225,7 @@ body {
   .plant-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .plant-card {
     padding: 0.5em 1em;
   }
@@ -232,5 +233,214 @@ body {
   .add-cart {
     padding: 0.7em 5em;
     font-size: 0.75rem;
+  }
+}
+
+/* Plant Lover Section */
+.plant-lover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  gap: 2em;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.lover-image {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  flex: 1;
+  padding-left: 45px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -70px;
+  right: -50px;
+  width: 190px;
+  height: auto;
+  z-index: 2;
+}
+
+.lover-content {
+  flex: 1;
+  min-width: 250px;
+}
+
+.lover-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+  line-height: 1.2;
+}
+
+.lover-content ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  font-size: 1rem;
+  color: #444;
+}
+
+.lover-content ul li {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+/* Responsive Plant-Lovers Section */
+@media (max-width: 550px) {
+  .plant-lover {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5em;
+  }
+
+  .lover-image {
+    order: 1;
+    padding-left: 0;
+  }
+
+  .lover-content {
+    order: 2;
+  }
+
+  .trusted-badge {
+    display: none;
+  }
+
+  .lover-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .lover-content h2 .highlight {
+    font-size: 2rem;
+  }
+
+  .lover-content ul {
+    font-size: 0.95rem;
+  }
+}
+
+/* Latest-Deals Section */
+.latest-deals {
+  text-align: center;
+  padding: 2em;
+  background-color: #f9f9f9;
+}
+
+.latest-deals h2 {
+  font-size: 3rem;
+}
+
+.deal-subtext {
+  margin-top: 0.5em;
+  color: #555;
+  font-size: 1rem;
+  max-width: 600px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.deal-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  margin-top: 2em;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.right-column {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.deal-img-box {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-column .deal-img-box {
+  height: 100%;
+}
+
+.deal-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.deal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  text-align: center;
+}
+
+.offer {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.plant-name {
+  font-size: 1.2rem;
+  margin: 0.4em 0;
+}
+
+.shop-link {
+  text-decoration: underline solid;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Responsive Latest Deals */
+@media (max-width: 550px) {
+  .deal-container {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .deal-img-box {
+    height: 250px;
   }
 }
