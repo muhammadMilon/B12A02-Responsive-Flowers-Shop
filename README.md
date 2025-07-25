@@ -6,8 +6,7 @@
 
 ## 🔗 Live Demo
 
-👉 [Click here to view the live site]()
-
+👉 [Click here to view the live site](https://muhammadmilon.github.io/B12A02-Responsive-Flowers-Shop/)
 ---
 
 ## 🌼 Description
