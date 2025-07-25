@@ -444,3 +444,39 @@ body {
     height: 250px;
   }
 }
+
+/* Join Section */
+.join {
+  text-align: center;
+  padding: 13em 8em;
+  background: url('images/news-letter-bg.png') no-repeat center center / cover;
+  color: white;
+  width: 100%;
+  min-height: 550px;
+}
+
+.join form {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.join input {
+  flex: 1;
+  padding: 1em;
+  font-size: 1rem;
+  border: none;
+}
+
+.join button {
+  padding: 1em 2em;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
